@@ -1,0 +1,11 @@
+# @file
+#
+# Main package configuration of Rust-UCI(RUCI).
+# SPDX-License-Identifier: WTFPL
+
+[package]
+name = "ruci"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

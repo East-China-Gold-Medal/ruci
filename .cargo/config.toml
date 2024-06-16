@@ -1,0 +1,8 @@
+# @file
+
+# Compiler configuration of Rust-UCI(RUCI).
+# SPDX-License-Identifier: WTFPL
+
+[target.aarch64-unknown-linux-musl]
+linker = "aarch64-openwrt-linux-musl-gcc"
+ar = "aarch64-openwrt-linux-musl-ar"
