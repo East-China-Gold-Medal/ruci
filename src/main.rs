@@ -4,8 +4,12 @@
     SPDX-License-Identifier: WTFPL
 
 */
-mod uci;
+
+use crate::control::uci::uci_alloc_context;
+
+mod control;
 
 fn main() {
     println!("It Works!");
+    let a = unsafe { uci_alloc_context() };
 }

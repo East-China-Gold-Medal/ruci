@@ -5,6 +5,9 @@ A **(WIP)** project that hosts an OpenWRT UCI configuration interface on Rust.
 + libUCI binding (bindgen)  
 + libc getlogin() binding (MUSL libc)
 + RESTful interface
-+ ***TBD***
++ *TBD*
+## Build Notes
++ Use OpenWRT SDK for OpenWRT-specific toolchain
++ OpenWRT SDK **WILL** discard symbol table from dynamic library. You must build *libuci* from OpenWRT SDK **BY YOUR OWN**. 
 ## Credits
 + [UCI from OpenWRT](https://git.openwrt.org/?p=project/uci.git)
