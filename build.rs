@@ -10,6 +10,4 @@ fn main() {
         println!("cargo::rustc-link-arg=-Wl,--dynamic-linker=/lib/ld-musl-{}.so.1",
                  std::env::var("CARGO_CFG_TARGET_ARCH").unwrap());
     }
-    // LibUCI C libraries
-    println!("cargo::rustc-link-arg=-luci");
 }

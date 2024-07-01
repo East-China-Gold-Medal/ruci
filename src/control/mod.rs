@@ -4,4 +4,4 @@
     SPDX-License-Identifier: WTFPL
 
 */
-pub mod uci;
+pub mod control_uci;

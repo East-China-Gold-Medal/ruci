@@ -7,6 +7,8 @@
 name = "ruci"
 version = "0.1.0"
 edition = "2021"
-links = "foo"
 
 [dependencies]
+cgi = "0.6.0"
+rust-uci = { git = 'https://github.com/East-China-Gold-Medal/rust-uci' }
+lazy_static = "1.5.0"
