@@ -29,6 +29,11 @@
 	padding-left: 0.8em;
 	padding-right: 0.8em;
 	border-radius: 3px;
+	box-shadow: 0px 2px gray;
+	transition: box-shadow 0.3s;
+}
+
+#password_box:hover {
 	box-shadow: 0px 2px #00ace2;
 }
 
