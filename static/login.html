@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ondragstart='return false;'>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/css/generic.css">
+		<link rel="stylesheet" type="text/css" href="/css/login.css">
+		<link rel="shortcut icon" href="/images/favicon.png">
+		<script type="text/javascript" src="/scripts/login.js"></script>
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="avatar_container">
+			<img src="/images/defaultavatar.png">
+		</div>
+		<!--
+			We only use "root" for now, as most settings cannot be done
+			under non-root users.
+			This is a design fault on OpenWRT.
+		-->
+		<p id="username">root</p>
+		<div id="password_box">
+			<ul>
+				<li>
+					<input type="password" id="password_input">
+				</li>
+				<li>
+					<img id="submit_button" src="/images/right-arrow.svg">
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
