@@ -1,3 +1,8 @@
+/*
+	Generic CSS configuration of Rust-UCI(RUCI).
+	SPDX-License-Identifier: WTFPL
+*/
+
 body {
 	background-image:url(/images/defaultbackground.jpg);
 	background-repeat:no-repeat;

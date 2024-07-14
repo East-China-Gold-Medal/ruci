@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--
+	Login web interface of Rust-UCI(RUCI).
+	SPDX-License-Identifier: WTFPL
+-->
 <html ondragstart='return false;'>
 	<head>
 		<meta charset="utf-8">
@@ -6,9 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="/css/login.css">
 		<link rel="shortcut icon" href="/images/favicon.png">
 		<script type="text/javascript" src="/scripts/login.js"></script>
-		<title>登录</title>
+		<title>login</title>
 	</head>
 	<body>
+		<div id="background_blur"></div>
 		<div class="avatar_container">
 			<img src="/images/defaultavatar.png">
 		</div>
@@ -24,7 +29,8 @@
 					<input type="password" id="password_input">
 				</li>
 				<li>
-					<img id="submit_button" onclick="login()" src="/images/right-arrow.svg">
+					<img id="submit_button" onclick="login()"
+						src="/images/right-arrow.svg">
 				</li>
 			</ul>
 		</div>

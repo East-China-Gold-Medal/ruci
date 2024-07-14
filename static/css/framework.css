@@ -1,0 +1,97 @@
+/*
+	Framework CSS of Rust-UCI(RUCI).
+	SPDX-License-Identifier: WTFPL
+*/
+
+body {
+	background-image:url(/images/defaultbackground.jpg);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select :none;
+}
+
+#master_container {
+	width: 280px;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.2);
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-left: 0.8em;
+	padding-top: 0.8em;
+}
+
+#detail_container {
+	max-width: 1000px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.2);
+	height: inherit;
+	margin: 0 auto;
+}
+
+#detail_wrapper {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	width: calc(100% - 300px - 0.8em);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.avatar_container {
+	width: 64px;
+	height: 64px;
+}
+
+#avatar_region {
+	height: 64px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+
+#avatar_username {
+	left: 75px;
+	top: -55px;
+	font-size: medium;
+	position: relative;
+}
+
+#avatar_userrole {
+	left: 75px;
+	top: -55px;
+	font-size: smaller;
+	position: relative;
+}
+
+#master_list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.master_menu_list {
+	padding-left: 0.8em;
+	padding-top: 6px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-bottom: 6px;
+	font-size: 16px;
+	font-weight: 500;
+	border-radius: 3px;
+}
+
+.master_menu_list:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.master_menu_icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 0.7em;
+	margin-bottom: -6px;
+}
