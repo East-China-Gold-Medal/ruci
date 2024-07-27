@@ -10,5 +10,10 @@ edition = "2021"
 
 [dependencies]
 cgi = "0.6.0"
-rust-uci = { git = 'https://github.com/East-China-Gold-Medal/rust-uci' }
+rust-uci = { git = 'https://github.com/East-China-Gold-Medal/rust-uci',optional = true}
 lazy_static = "1.5.0"
+shadow = "0.0.1"
+
+[features]
+default = ["settings_provider_uci"]
+settings_provider_uci = ["dep:rust-uci"]

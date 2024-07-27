@@ -1,0 +1,4 @@
+config user root
+    option sessionkey ''
+    option avatar 'defaultavatar.png'
+    option background 'defaultbackground.jpg'

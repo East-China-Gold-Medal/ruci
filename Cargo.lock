@@ -300,6 +300,7 @@ dependencies = [
  "cgi",
  "lazy_static",
  "rust-uci",
+ "shadow",
 ]
 
 [[package]]
@@ -329,6 +330,15 @@ dependencies = [
  "libc",
  "linux-raw-sys",
  "windows-sys",
+]
+
+[[package]]
+name = "shadow"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dcaa1dbf13cc052b53af59e70dd467e8e94d6abf8d0eac1f1d15d3e165973b86"
+dependencies = [
+ "libc",
 ]
 
 [[package]]
