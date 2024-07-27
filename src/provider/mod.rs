@@ -63,27 +63,23 @@ impl SettingsProvider for UciSettingsProvider {
 }
 
 pub fn initialize_settings() -> &'static mut dyn SettingsProvider {
-    if cfg!(settings_provider_uci) {
-        match {Uci::new()} {
-            Ok(ins) => {
-                Box::leak(
-                    Box::new (
-                        UciSettingsProvider {
-                            instance: ins,
-                        }
-                    )
+    let mut ret: &'static mut dyn SettingsProvider = Box::leak(
+        Box::new(
+            DummySettingsProvider {}
+        )
+    );
+    if cfg!(feature ="settings_provider_uci") {
+        let a = Uci::new();
+        if a.is_ok() {
+            ret = Box::leak(
+                Box::new(
+                    UciSettingsProvider {
+                        instance: a.unwrap(),
+                    }
                 )
-            }
-            Err(_) => {panic!("Error!")}
+            );
         }
     }
-    else {
-        // TODO: Other implementations
-        Box::leak(
-            Box::new (
-                DummySettingsProvider {
-                }
-            )
-        )
-    }
+    // TODO: Other implementations
+    ret
 }
