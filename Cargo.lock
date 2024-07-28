@@ -299,8 +299,11 @@ version = "0.1.0"
 dependencies = [
  "cgi",
  "lazy_static",
+ "regex",
  "rust-uci",
  "shadow",
+ "string-builder",
+ "syn",
 ]
 
 [[package]]
@@ -348,10 +351,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0fda2ff0d084019ba4d7c6f371c95d8fd75ce3524c3cb8fb653a3023f6323e64"
 
 [[package]]
-name = "syn"
-version = "2.0.68"
+name = "string-builder"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "901fa70d88b9d6c98022e23b4136f9f3e54e4662c3bc1bd1d84a42a9a0f0c1e9"
+checksum = "2bd10a070fb1f2796a288abec42695db4682a82b6f12ffacd60fb8d5ad3a4a12"
+
+[[package]]
+name = "syn"
+version = "2.0.72"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dc4b9b9bf2add8093d3f2c0204471e951b2285580335de42f9d2534f3ae7a8af"
 dependencies = [
  "proc-macro2",
  "quote",

@@ -7,6 +7,7 @@
 use cgi::{Request, Response};
 use crate::provider;
 
+#[doc = r"GET,/info"]
 pub(crate) fn info(_request: Request) -> Response {
     let mut settings= provider::settings::initialize_settings();
     let res =settings.get("network.lan.proto");

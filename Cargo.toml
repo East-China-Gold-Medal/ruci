@@ -14,6 +14,13 @@ rust-uci = { git = 'https://github.com/East-China-Gold-Medal/rust-uci',optional 
 lazy_static = "1.5.0"
 shadow = "0.0.1"
 
+
+
+[build-dependencies]
+syn = "2.0.72"
+regex = "1.10.5"
+string-builder = "0.2.0"
+
 [features]
 default = ["settings_provider_uci"]
 settings_provider_uci = ["dep:rust-uci"]
