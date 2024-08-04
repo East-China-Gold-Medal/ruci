@@ -1,4 +1,5 @@
 config user root
     option sessionkey ''
+    option sessionexpirytime 0
     option avatar 'defaultavatar.png'
     option background 'defaultbackground.jpg'
