@@ -5,5 +5,5 @@
 
 */
 
-pub mod settings;
 pub mod password;
+pub mod settings;

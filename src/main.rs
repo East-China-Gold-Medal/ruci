@@ -5,8 +5,8 @@
 
 */
 
-mod provider;
 mod controller;
+mod provider;
 mod service;
 
 extern crate cgi;
@@ -17,16 +17,17 @@ use std::panic;
 // Test UCI binding.
 fn main() {
     panic::set_hook(Box::new(|info| {
-        println!(concat!(
+        println!(
+            concat!(
                 "Status: 500 Internal Server Error\r\n",
                 "cache-control: no-cache\r\n",
                 "content-type: text/plain\r\n\r\n",
-                "{}\r\n{}\r\n"),
+                "{}\r\n{}\r\n"
+            ),
             info,
-            Backtrace::force_capture());
+            Backtrace::force_capture()
+        );
     }));
 
-    cgi::handle(|request: cgi::Request| -> cgi::Response {
-        controller::route_uri(request)
-    });
+    cgi::handle(|request: cgi::Request| -> cgi::Response { controller::route_uri(request) });
 }
