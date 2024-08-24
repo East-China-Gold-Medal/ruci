@@ -12,6 +12,7 @@
 	font-weight: 600;
 	color: white;
 	text-align: center;
+	font-family: Arial, system-ui, sans-serif;
 }
 
 .avatar_container {
@@ -30,16 +31,14 @@
 	height: 32px;
 	width: calc(290px - 1.6em);
 	background-color: rgba(255, 255, 255, 0.2);
-	padding: 2px;
-	padding-left: 0.8em;
-	padding-right: 0.8em;
+	padding: 2px 0.8em;
 	border-radius: 3px;
-	box-shadow: 0px 2px gray;
+	box-shadow: 0 2px gray;
 	transition: box-shadow 0.3s;
 }
 
 #password_box:hover {
-	box-shadow: 0px 2px #00ace2;
+	box-shadow: 0 2px #00ace2;
 }
 
 #password_input {
@@ -48,6 +47,7 @@
 	background-color: transparent;
 	border: none;
 	outline: none;
+	background-clip: content-box;
 }
 
 #submit_button {
@@ -73,7 +73,7 @@
 	top: 0;
 	left: 0;
 	transition: filter 0.3s;
-	background-image:url(/images/defaultbackground.jpg);
+	background-image:url(../images/defaultbackground.jpg);
 	background-repeat:no-repeat;
 	background-size:100%;
 	background-attachment:fixed;

@@ -4,8 +4,19 @@
 */
 
 function login() {
-	var str = document.getElementById("password_input").value;
-	alert(str);
+	let str = document.getElementById("password_input").value;
+    invoke_post_ajax (
+        'login',
+        "username=root&password="+encodeURI(str),
+        function (ajax) {
+            let json = JSON.parse(ajax.responseText);
+            document.cookie = "token="+json.token;
+            window.location.replace("framework.html");
+        },
+        function (ajax) {
+            alert("Login failed!\nIncorrect password?")
+        }
+    )
 }
 
 function blur_on() {

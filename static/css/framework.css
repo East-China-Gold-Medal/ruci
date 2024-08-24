@@ -4,14 +4,13 @@
 */
 
 body {
-	background-image:url(/images/defaultbackground.jpg);
+	background-image:url(../images/defaultbackground.jpg);
 	background-repeat:no-repeat;
 	background-size:100%;
 	background-attachment:fixed;
 	user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	-khtml-user-select :none;
 }
 
 #master_container {
@@ -60,6 +59,7 @@ body {
 	top: -55px;
 	font-size: medium;
 	position: relative;
+	font-family: Arial, system-ui, sans-serif;
 }
 
 #avatar_userrole {
@@ -83,6 +83,7 @@ body {
 	font-size: 16px;
 	font-weight: 500;
 	border-radius: 3px;
+	font-family: Arial, system-ui, sans-serif;
 }
 
 .master_menu_list:hover {

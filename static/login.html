@@ -3,19 +3,20 @@
 	Login web interface of Rust-UCI(RUCI).
 	SPDX-License-Identifier: WTFPL
 -->
-<html ondragstart='return false;'>
+<html ondragstart='return false;' lang="en">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="/css/generic.css">
-		<link rel="stylesheet" type="text/css" href="/css/login.css">
-		<link rel="shortcut icon" href="/images/favicon.png">
-		<script type="text/javascript" src="/scripts/login.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/generic.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<script type="text/javascript" src="scripts/generic.js"></script>
+		<script type="text/javascript" src="scripts/login.js"></script>
 		<title>login</title>
 	</head>
 	<body>
 		<div id="background_blur"></div>
 		<div class="avatar_container">
-			<img src="/images/defaultavatar.png">
+			<img src="images/defaultavatar.png" alt="default icon">
 		</div>
 		<!--
 			We only use "root" for now, as most settings cannot be done
@@ -30,7 +31,7 @@
 				</li>
 				<li>
 					<img id="submit_button" onclick="login()"
-						src="/images/right-arrow.svg">
+						src="images/right-arrow.svg" alt="submit button">
 				</li>
 			</ul>
 		</div>

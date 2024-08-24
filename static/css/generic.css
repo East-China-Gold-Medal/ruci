@@ -4,14 +4,13 @@
 */
 
 body {
-	background-image:url(/images/defaultbackground.jpg);
+	background-image:url(../images/defaultbackground.jpg);
 	background-repeat:no-repeat;
 	background-size:100%;
 	background-attachment:fixed;
 	user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	-khtml-user-select :none;
 }
 
 .avatar_container {

@@ -4,20 +4,21 @@
     Other sub-pages are loaded via AJAX.
 	SPDX-License-Identifier: WTFPL
 -->
-<html ondragstart='return false;'>
+<html ondragstart='return false;' lang="en">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="/css/generic.css">
-		<link rel="stylesheet" type="text/css" href="/css/framework.css">
-		<link rel="shortcut icon" href="/images/favicon.png">
-		<script type="text/javascript" src="/scripts/framework.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/generic.css">
+		<link rel="stylesheet" type="text/css" href="css/framework.css">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<script type="text/javascript" src="scripts/generic.js"></script>
+		<script type="text/javascript" src="scripts/framework.js"></script>
 		<title>settings</title>
 	</head>
 	<body>
 		<div id="master_container">
 			<div id="avatar_region">
 				<div class="avatar_container">
-					<img src="/images/defaultavatar.png">
+					<img src="images/defaultavatar.png" alt="default avatar">
 				</div>
 				<div id="avatar_username">
 					root
@@ -28,38 +29,38 @@
 			</div>
 			<ul id="master_list">
 				<li>
-					<div class="master_menu_list">
-						<img class="master_menu_icon" src="/images/status.svg">
+					<div class="master_menu_list" onclick="switch_to_status()" >
+						<img class="master_menu_icon" src="images/status.svg" alt="status icon">
 						Status
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list">
-						<img class="master_menu_icon" src="/images/system.svg">
+					<div class="master_menu_list" onclick="switch_to_system()">
+						<img class="master_menu_icon" src="images/system.svg" alt="system icon">
 						System
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list">
-						<img class="master_menu_icon" src="/images/internet.svg">
+					<div class="master_menu_list" onclick="switch_to_internet()">
+						<img class="master_menu_icon" src="images/internet.svg" alt="internet icon">
 						Internet
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list">
-						<img class="master_menu_icon" src="/images/wireless.svg">
+					<div class="master_menu_list" onclick="switch_to_wireless()">
+						<img class="master_menu_icon" src="images/wireless.svg" alt="wireless icon">
 						Wireless
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list">
-						<img class="master_menu_icon" src="/images/intranet.svg">
+					<div class="master_menu_list" onclick="switch_to_intranet()">
+						<img class="master_menu_icon" src="images/intranet.svg" alt="intranet icon">
 						Intranet
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list">
-						<img class="master_menu_icon" src="/images/advanced.svg">
+					<div class="master_menu_list" onclick="switch_to_advanced()">
+						<img class="master_menu_icon" src="images/advanced.svg" alt="advanced icon">
 						Advanced
 					</div>
 				</li>
