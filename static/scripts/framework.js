@@ -7,6 +7,7 @@ function switch_web_page(name) {
 	invoke_get_ajax(name+'.html',"",
 		function(ajax) {
 			document.getElementById('detail_container_real').innerHTML = ajax.responseText;
+			eval('onload_callback_'+name+'()')
 		},
 		function (ajax) {
 			alert("Cannot load web page:"+ajax.httpRequestStatusCode);
@@ -31,4 +32,5 @@ function toggle_expand(item) {
 
 function copy_information(item) {
 	// TODO
+	return false;
 }
