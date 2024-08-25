@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <!--
 	Status sub-page of Rust-UCI(RUCI).
-    Loaded by framework.html via AJAX.
+	Loaded by framework.html via AJAX.
 	SPDX-License-Identifier: WTFPL
 -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Status Settings -- RUCI</title>
+	<meta charset="UTF-8">
+	<title>Status Settings -- RUCI</title>
 </head>
 <body>
-Status!
+	<div class="section_wrapper">
+		<div class="section_header" onclick="toggle_expand(this)">
+			<img src="images/info.svg" class="section_icon">
+			<span>Device specifications</span>
+			<button onclick="copy_information(this)">Copy</button>
+			<img src="images/expand.svg" class="expand_icon">
+		</div>
+		<div class="section_content">
+			<table>
+				<tr>
+					<td class="property_name">Device name</td>
+					<td class="property_value" id="device_name">fhh-openwrt</td>
+				</tr>
+				<tr>
+					<td class="property_name">Device model</td>
+					<td class="property_value" id="device_model">ECGM Router E1</td>
+				</tr>
+				<tr>
+					<td class="property_name">Processor</td>
+					<td class="property_value" id="processor">East-China-Gold-Medal E9-9999X Processor</td>
+				</tr>
+				<tr>
+					<td class="property_name">Installed RAM</td>
+					<td class="property_value" id="installed_ram">9999TiB</td>
+				</tr>
+				<tr>
+					<td class="property_name">Architecture</td>
+					<td class="property_value" id="architecture">ARMv8 Processor rev 4</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="section_wrapper">
+		<div class="section_header" onclick="toggle_expand(this)">
+			<img style="margin-left: 14px; margin-right: 26px;" src="images/openwrt_logo_black.svg" class="section_icon">
+			<span>OpenWRT specifications</span>
+			<button onclick="copy_information(this)">Copy</button>
+			<img src="images/expand.svg" class="expand_icon">
+		</div>
+		<div class="section_content">
+			<table>
+				<tr>
+					<td class="property_name">System version</td>
+					<td class="property_value" id="firmware_version">OpenWrt 23.05.3 r23809-234f1a2efa / LuCI openwrt-23.05 branch git-24.086.45142-09d5a38</td>
+				</tr>
+				<tr>
+					<td class="property_name">Target platform</td>
+					<td class="property_value" id="target_platform">mediatek/filogic</td>
+				</tr>
+				<tr>
+					<td class="property_name">Kernel version</td>
+					<td class="property_value" id="kernel_versopn">6.99.99</td>
+				</tr>
+				<tr>
+					<td class="property_name">Power-on time</td>
+					<td class="property_value" id="power_on_time">699 Days</td>
+				</tr>
+				<tr>
+					<td class="property_name">Average load</td>
+					<td class="property_value" id="average_load">0.00, 0.00, 0.00</td>
+				</tr>
+			</table>
+		</div>
+	</div>
 </body>
 </html>

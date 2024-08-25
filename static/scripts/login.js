@@ -5,18 +5,18 @@
 
 function login() {
 	let str = document.getElementById("password_input").value;
-    invoke_post_ajax (
-        'login',
-        "username=root&password="+encodeURI(str),
-        function (ajax) {
-            let json = JSON.parse(ajax.responseText);
-            document.cookie = "token="+json.token;
-            window.location.replace("framework.html");
-        },
-        function (ajax) {
-            alert("Login failed!\nIncorrect password?")
-        }
-    )
+	invoke_post_ajax (
+		'login',
+		"username=root&password="+encodeURI(str),
+		function (ajax) {
+			let json = JSON.parse(ajax.responseText);
+			document.cookie = "token="+json.token;
+			window.location.replace("framework.html");
+		},
+		function (ajax) {
+			alert("Login failed!\nIncorrect password?")
+		}
+	)
 }
 
 function blur_on() {
@@ -27,14 +27,14 @@ function blur_off() {
 }
 
 (function(){
-    let moving = false,
-        timer = null;
-    window.onmousemove = window.onkeydown = function(){
-        moving = true;
-        clearTimeout(timer);
+	let moving = false,
+		timer = null;
+	window.onmousemove = window.onkeydown = function(){
+		moving = true;
+		clearTimeout(timer);
 		blur_on();
-        timer = setTimeout(function(){
+		timer = setTimeout(function(){
 			blur_off();
-        },3000);
-    }
+		},3000);
+	}
 }());

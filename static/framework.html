@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 	Main settings framework of Rust-UCI(RUCI).
-    Other sub-pages are loaded via AJAX.
+	Other sub-pages are loaded via AJAX.
 	SPDX-License-Identifier: WTFPL
 -->
 <html ondragstart='return false;' lang="en">
@@ -29,37 +29,37 @@
 			</div>
 			<ul id="master_list">
 				<li>
-					<div class="master_menu_list" onclick="switch_to_status()" >
+					<div class="master_menu_list" onclick="switch_web_page('status')" >
 						<img class="master_menu_icon" src="images/status.svg" alt="status icon">
 						Status
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list" onclick="switch_to_system()">
+					<div class="master_menu_list" onclick="switch_web_page('system')">
 						<img class="master_menu_icon" src="images/system.svg" alt="system icon">
 						System
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list" onclick="switch_to_internet()">
+					<div class="master_menu_list" onclick="switch_web_page('internet')">
 						<img class="master_menu_icon" src="images/internet.svg" alt="internet icon">
 						Internet
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list" onclick="switch_to_wireless()">
+					<div class="master_menu_list" onclick="switch_web_page('wireless')">
 						<img class="master_menu_icon" src="images/wireless.svg" alt="wireless icon">
 						Wireless
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list" onclick="switch_to_intranet()">
+					<div class="master_menu_list" onclick="switch_web_page('intranet')">
 						<img class="master_menu_icon" src="images/intranet.svg" alt="intranet icon">
 						Intranet
 					</div>
 				</li>
 				<li>
-					<div class="master_menu_list" onclick="switch_to_advanced()">
+					<div class="master_menu_list" onclick="switch_web_page('advanced')">
 						<img class="master_menu_icon" src="images/advanced.svg" alt="advanced icon">
 						Advanced
 					</div>
@@ -69,8 +69,14 @@
 		</div>
 		<div id="detail_wrapper">
 			<div id="detail_container">
+				<div id="detail_content_title">Title</div>
+				<div id="detail_container_real">
 
+				</div>
 			</div>
 		</div>
+		<script>
+			switch_web_page('status')
+		</script>
 	</body>
 </html>

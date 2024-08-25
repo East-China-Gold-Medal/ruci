@@ -4,36 +4,31 @@
 */
 
 function switch_web_page(name) {
-    invoke_get_ajax(name+'.html',"",
-        function(ajax) {
-            document.getElementById('detail_container').innerHTML = ajax.responseText
-        },
-        function (ajax) {
-            alert("Cannot load web page:"+ajax.httpRequestStatusCode)
-        }
-    )
+	invoke_get_ajax(name+'.html',"",
+		function(ajax) {
+			document.getElementById('detail_container_real').innerHTML = ajax.responseText;
+		},
+		function (ajax) {
+			alert("Cannot load web page:"+ajax.httpRequestStatusCode);
+		}
+	)
 }
 
-function switch_to_status() {
-    switch_web_page('status')
+function set_content_title(str) {
+	document.getElementById('detail_content_title').innerHTML = str;
 }
 
-function switch_to_system() {
-    switch_web_page('system')
+function toggle_expand(item) {
+	if(item.parentElement.style.height === '64px') {
+		item.parentElement.style.height = 'auto';
+		item.querySelector(".expand_icon").style.rotate = '180deg'
+	}
+	else {
+		item.parentElement.style.height = '64px';
+		item.querySelector(".expand_icon").style.rotate = '0deg'
+	}
 }
 
-function switch_to_internet() {
-    switch_web_page('internet')
-}
-
-function switch_to_wireless() {
-    switch_web_page('wireless')
-}
-
-function switch_to_intranet() {
-    switch_web_page('intranet')
-}
-
-function switch_to_advanced() {
-    switch_web_page('advanced')
+function copy_information(item) {
+	// TODO
 }
